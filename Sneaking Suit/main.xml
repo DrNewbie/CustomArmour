@@ -1,6 +1,6 @@
 <table name="Sneaking Suit">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="21958" name="asset_updates" folder_name="Sneaking Suit" version="5" provider="modworkshop"/>
+	<AssetUpdates id="21958" name="asset_updates" folder_name="Sneaking Suit" version="7" provider="modworkshop"/>
 	<AddFiles directory="Assets">
 		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_10" force="true" relaod="true"/>
 	</AddFiles>

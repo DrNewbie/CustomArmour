@@ -1,3 +1,7 @@
+if not PackageManager:loaded("packages/lvl_dah") then
+	PackageManager:load("packages/lvl_dah")
+end
+
 Hooks:PostHook(CriminalsManager, "add_character", "SneakingSuit_add_character", function(self, name, unit, peer_id, ai, ai_loadout)
 	if alive(unit) then
 		local peer = managers.network:session():peer(peer_id)

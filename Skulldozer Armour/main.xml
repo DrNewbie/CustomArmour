@@ -1,14 +1,14 @@
-<table name="Zeal Heavy Armour">
+<table name="Skulldozer Armour">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="21961" name="asset_updates" folder_name="Zeal Heavy Armour" version="7" provider="modworkshop"/>
+	<AssetUpdates id="21967" name="asset_updates" folder_name="Skulldozer Armour" version="7" provider="modworkshop"/>
 	<AddFiles directory="Assets">
-		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_11" force="true" relaod="true"/>
+		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_12" force="true" relaod="true"/>
 		
-		<cooked_physics path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true" relaod="true"/>
-		<material_config path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true" relaod="true"/>
-		<model path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true" relaod="true"/>
-		<object path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true" relaod="true"/>
-		<unit path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true" relaod="true"/>
+		<cooked_physics path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true" relaod="true"/>
+		<material_config path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true" relaod="true"/>
+		<model path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true" relaod="true"/>
+		<object path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true" relaod="true"/>
+		<unit path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true" relaod="true"/>
 	</AddFiles>
 	<Hooks directory="Hooks">
 		<hook file="Core.lua" source_file="core/lib/managers/coresequencemanager"/>

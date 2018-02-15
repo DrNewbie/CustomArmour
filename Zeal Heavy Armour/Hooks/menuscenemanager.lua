@@ -1,11 +1,3 @@
-if not PackageManager:loaded("packages/lvl_dah") then
-	PackageManager:load("packages/lvl_dah")
-end
-
-if not PackageManager:loaded("packages/sm_wish") then
-	PackageManager:load("packages/sm_wish")
-end
-
 function MenuSceneManager:get_level_11_armor(armor_id, unit)
 	if managers.network and managers.network:session() and armor_id == "level_11" then
 		local unit_damage = alive(unit) and unit:damage()

@@ -15,5 +15,5 @@ function NetworkMatchMakingSTEAM:is_server_ok(friends_only, room, attributes_lis
 			return false
 		end
 	end
-	ZealHeavyArmour_is_server_ok_original(self, friends_only, room, attributes_list, is_invite)
+	return ZealHeavyArmour_is_server_ok_original(self, friends_only, room, attributes_list, is_invite)
 end
