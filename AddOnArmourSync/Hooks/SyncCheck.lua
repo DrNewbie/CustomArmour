@@ -5,7 +5,7 @@ function BeardLib.Utils:CleanOutfitString(str, is_henchman)
 		is_henchman = false
 	end
 	local list = (is_henchman and bm.unpack_henchman_loadout_string) and bm:unpack_henchman_loadout_string(str) or bm:unpack_outfit_from_string(str)
-    local bta = tweak_data.blackmarket.armors
+	local bta = tweak_data.blackmarket.armors
 	if list.armor and bta[list.armor] and bta[list.armor].custom then
 		list.armor = bta[list.armor].base_on or "level_1"
 	end
