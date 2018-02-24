@@ -1,6 +1,6 @@
 <table name="Zeal Heavy Armour">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="21961" name="asset_updates" folder_name="Zeal Heavy Armour" version="7" provider="modworkshop"/>
+	<AssetUpdates id="21961" name="asset_updates" folder_name="Zeal Heavy Armour" version="10" provider="modworkshop"/>
 	<AddFiles directory="Assets">
 		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_11" force="true" relaod="true"/>
 		

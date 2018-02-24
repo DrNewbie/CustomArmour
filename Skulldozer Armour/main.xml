@@ -1,6 +1,6 @@
 <table name="Skulldozer Armour">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="21967" name="asset_updates" folder_name="Skulldozer Armour" version="7" provider="modworkshop"/>
+	<AssetUpdates id="21967" name="asset_updates" folder_name="Skulldozer Armour" version="10" provider="modworkshop"/>
 	<AddFiles directory="Assets">
 		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_12" force="true" relaod="true"/>
 		

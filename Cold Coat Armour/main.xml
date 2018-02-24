@@ -1,6 +1,6 @@
 <table name="Cold Coat Armour">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="21937" name="asset_updates" folder_name="Cold Coat Armour" version="7" provider="modworkshop"/>
+	<AssetUpdates id="21937" name="asset_updates" folder_name="Cold Coat Armour" version="10" provider="modworkshop"/>
 	<AddFiles directory="Assets">
 		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_9" force="true" relaod="true"/>
 	</AddFiles>
