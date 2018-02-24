@@ -1,4 +1,0 @@
-{
-	"bm_armor_level_11":"Zeal Heavy Armour",
-	"bm_armor_level_11_desc":" "
-}

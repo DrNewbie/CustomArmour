@@ -1,4 +1,0 @@
-{
-	"bm_armor_level_10":"Sneaking Suit",
-	"bm_armor_level_10_desc":" "
-}

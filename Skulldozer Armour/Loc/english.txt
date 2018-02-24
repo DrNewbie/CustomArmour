@@ -1,4 +1,0 @@
-{
-	"bm_armor_level_12":"Skulldozer Armour",
-	"bm_armor_level_12_desc":" "
-}

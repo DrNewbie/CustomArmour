@@ -1,4 +1,0 @@
-{
-	"bm_armor_level_9":"Cold Coat Armour",
-	"bm_armor_level_9_desc":" "
-}

@@ -1,4 +1,0 @@
-{
-	"bm_armor_level_13":"Zeal Taser Armour",
-	"bm_armor_level_13_desc":" "
-}
