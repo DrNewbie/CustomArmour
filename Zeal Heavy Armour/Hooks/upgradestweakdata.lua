@@ -16,6 +16,6 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ZealHeavyArmour_init_pd2_
 	self.values.player.body_armor.skill_ammo_mul[11] = self.values.player.body_armor.skill_ammo_mul[7]
 	self.values.player.body_armor.skill_max_health_store[11] = self.values.player.body_armor.skill_max_health_store[7]
 	self.values.player.body_armor.skill_kill_change_regenerate_speed[11] = self.values.player.body_armor.skill_kill_change_regenerate_speed[7]
-	self.values.player.armor_grinding[11] = self.values.player.armor_grinding[7]
-	self.values.player.damage_to_armor[11] = self.values.player.damage_to_armor[7]
+	self.values.player.armor_grinding[1][11] = self.values.player.armor_grinding[1][7]
+	self.values.player.damage_to_armor[1][11] = self.values.player.damage_to_armor[1][7]
 end)

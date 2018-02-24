@@ -16,6 +16,6 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "SneakingSuit_init_pd2_val
 	self.values.player.body_armor.skill_ammo_mul[10] = self.values.player.body_armor.skill_ammo_mul[1]
 	self.values.player.body_armor.skill_max_health_store[10] = self.values.player.body_armor.skill_max_health_store[1]
 	self.values.player.body_armor.skill_kill_change_regenerate_speed[10] = self.values.player.body_armor.skill_kill_change_regenerate_speed[1]
-	self.values.player.armor_grinding[10] = self.values.player.armor_grinding[1]
-	self.values.player.damage_to_armor[10] = self.values.player.damage_to_armor[1]
+	self.values.player.armor_grinding[1][10] = self.values.player.armor_grinding[1][1]
+	self.values.player.damage_to_armor[1][10] = self.values.player.damage_to_armor[1][1]
 end)

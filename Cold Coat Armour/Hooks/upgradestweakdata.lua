@@ -16,6 +16,6 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "ColdCoatArmour_init_pd2_v
 	self.values.player.body_armor.skill_ammo_mul[9] = 1.6
 	self.values.player.body_armor.skill_max_health_store[9] = 10
 	self.values.player.body_armor.skill_kill_change_regenerate_speed[9] = 10
-	self.values.player.armor_grinding[9] = self.values.player.armor_grinding[7]
-	self.values.player.damage_to_armor[9] = self.values.player.damage_to_armor[7]
+	self.values.player.armor_grinding[1][9] = self.values.player.armor_grinding[1][7]
+	self.values.player.damage_to_armor[1][9] = self.values.player.damage_to_armor[1][7]
 end)
