@@ -1,5 +1,5 @@
 Hooks:PostHook(UpgradesTweakData, "_player_definitions", "SkulldozerArmour_player_definitions", function(self)	
-	self.definitions.body_armor9 = {
+	self.definitions.body_armor11 = {
 		name_id = "bm_armor_level_12",
 		armor_id = "level_12",
 		category = "armor"
