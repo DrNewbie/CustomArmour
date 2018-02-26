@@ -9,4 +9,6 @@ Hooks:PostHook(BlackMarketManager, "on_aquired_armor", "Dr_Newbie_CustomArmourPa
 	self._global.armors["level_12"].owned = self._global.armors["level_7"].owned
 	self._global.armors["level_13"].unlocked = self._global.armors["level_7"].unlocked
 	self._global.armors["level_13"].owned = self._global.armors["level_7"].owned
+	self._global.armors["level_14"].unlocked = self._global.armors["level_3"].unlocked
+	self._global.armors["level_14"].owned = self._global.armors["level_3"].owned
 end)

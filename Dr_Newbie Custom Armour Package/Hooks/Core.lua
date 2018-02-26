@@ -3,7 +3,7 @@ if not PackageManager:loaded("packages/lvl_wwh") then
 end
 
 if not PackageManager:loaded("packages/lvl_dah") then
-	PackageManager:load("packages/lvl_wwh")
+	PackageManager:load("packages/lvl_dah")
 end
 
 if not PackageManager:loaded("packages/sm_wish") then

@@ -1,4 +1,7 @@
 {
+	"bm_armor_level_14":"Cloaker's Suit",
+	"bm_armor_level_14_desc":" ",
+	
 	"bm_armor_level_13":"Zeal Taser Armour",
 	"bm_armor_level_13_desc":" ",
 
