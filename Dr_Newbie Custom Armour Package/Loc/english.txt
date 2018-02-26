@@ -4,12 +4,15 @@
 	
 	"bm_armor_level_13":"Zeal Taser Armour",
 	"bm_armor_level_13_desc":" ",
-
-	"bm_armor_level_11":"Zeal Heavy Armour",
-	"bm_armor_level_11_desc":" ",
+	"bm_menu_skill_locked_level_13":"Requires the iron man skill",
 
 	"bm_armor_level_12":"Skulldozer Armour",
 	"bm_armor_level_12_desc":" ",
+	"bm_menu_skill_locked_level_12":"Requires the iron man skill",
+
+	"bm_armor_level_11":"Zeal Heavy Armour",
+	"bm_armor_level_11_desc":" ",
+	"bm_menu_skill_locked_level_11":"Requires the iron man skill",
 
 	"bm_armor_level_10":"Sneaking Suit",
 	"bm_armor_level_10_desc":" ",
