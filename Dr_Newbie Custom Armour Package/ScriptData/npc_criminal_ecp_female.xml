@@ -175,10 +175,9 @@
 		</sequence>
 		<sequence name="'preprocessor_dummy'"/>
 		<sequence editable="true" editable_state="false" name="'spawn_zeal_heavy_armour'" triggable="true">
-			<set_variables var_body_replace="1"/>
 			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour'"/>
-			<object enabled="false" name="'g_body'"/>
-			<object enabled="false" name="'g_hands'"/>
+			<object enabled="false" name="'g_body'" start_time="10/30"/>
+			<object enabled="false" name="'g_hands'" start_time="10/30"/>
 			<object enabled="false" name="'g_vest_small'"/>
 			<object enabled="false" name="'g_vest_body'"/>
 			<object enabled="false" name="'g_vest_shoulder'"/>
@@ -187,10 +186,9 @@
 			<object enabled="false" name="'g_vest_leg_arm'"/>
 		</sequence>
 		<sequence editable="true" editable_state="false" name="'spawn_zeal_taser_armour'" triggable="true">
-			<set_variables var_body_replace="1"/>
 			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/payday2/characters/hh_acc_zeal_taser_armour/hh_acc_zeal_taser_armour'"/>
-			<object enabled="false" name="'g_body'"/>
-			<object enabled="false" name="'g_hands'"/>
+			<object enabled="false" name="'g_body'" start_time="10/30"/>
+			<object enabled="false" name="'g_hands'" start_time="10/30"/>
 			<object enabled="false" name="'g_vest_small'"/>
 			<object enabled="false" name="'g_vest_body'"/>
 			<object enabled="false" name="'g_vest_shoulder'"/>
@@ -199,10 +197,9 @@
 			<object enabled="false" name="'g_vest_leg_arm'"/>
 		</sequence>
 		<sequence editable="true" editable_state="false" name="'spawn_spooc_armour'" triggable="true">
-			<set_variables var_body_replace="1"/>
 			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/payday2/characters/hh_acc_spooc_armour/hh_acc_spooc_armour'"/>
-			<object enabled="false" name="'g_body'"/>
-			<object enabled="false" name="'g_hands'"/>
+			<object enabled="false" name="'g_body'" start_time="10/30"/>
+			<object enabled="false" name="'g_hands'" start_time="10/30"/>
 			<object enabled="false" name="'g_vest_small'"/>
 			<object enabled="false" name="'g_vest_body'"/>
 			<object enabled="false" name="'g_vest_shoulder'"/>
@@ -211,10 +208,9 @@
 			<object enabled="false" name="'g_vest_leg_arm'"/>
 		</sequence>
 		<sequence editable="true" editable_state="false" name="'spawn_skulldozer_armour'" triggable="true">
-			<set_variables var_body_replace="1"/>
 			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour'"/>
-			<object enabled="false" name="'g_body'"/>
-			<object enabled="false" name="'g_hands'"/>
+			<object enabled="false" name="'g_body'" start_time="10/30"/>
+			<object enabled="false" name="'g_hands'" start_time="10/30"/>
 			<object enabled="false" name="'g_vest_small'"/>
 			<object enabled="false" name="'g_vest_body'"/>
 			<object enabled="false" name="'g_vest_shoulder'"/>

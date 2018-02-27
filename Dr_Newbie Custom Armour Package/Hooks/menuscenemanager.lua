@@ -1,15 +1,3 @@
-if not PackageManager:loaded("packages/lvl_wwh") then
-	PackageManager:load("packages/lvl_wwh")
-end
-
-if not PackageManager:loaded("packages/lvl_dah") then
-	PackageManager:load("packages/lvl_wwh")
-end
-
-if not PackageManager:loaded("packages/sm_wish") then
-	PackageManager:load("packages/sm_wish")
-end
-
 function MenuSceneManager:get_level_addon_armor(armor_id, unit)
 	armor_id = tostring(armor_id)
 	if managers.network and managers.network:session() then

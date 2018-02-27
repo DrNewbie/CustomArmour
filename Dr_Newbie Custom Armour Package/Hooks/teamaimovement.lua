@@ -1,15 +1,3 @@
-if not PackageManager:loaded("packages/lvl_wwh") then
-	PackageManager:load("packages/lvl_wwh")
-end
-
-if not PackageManager:loaded("packages/lvl_dah") then
-	PackageManager:load("packages/lvl_dah")
-end
-
-if not PackageManager:loaded("packages/sm_wish") then
-	PackageManager:load("packages/sm_wish")
-end
-
 Hooks:PostHook(TeamAIMovement, "check_visual_equipment", "Dr_Newbie_CustomArmourPackage_check_visual_equipment", function(self)
 	local loadout =  managers.criminals:get_loadout_for(self._ext_base._tweak_table)
 	local unit_damage = self._unit:damage()

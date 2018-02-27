@@ -1,45 +1,118 @@
 <table name="Dr_Newbie Custom Armour Package">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="22013" name="asset_updates" folder_name="Dr_Newbie Custom Armour Package" version="6" provider="modworkshop"/>
+	<AssetUpdates id="22013" name="asset_updates" folder_name="Dr_Newbie Custom Armour Package" version="10" provider="modworkshop"/>
 	<AddFiles directory="Assets">
-		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_14" force="true" relaod="true"/>
-		<cooked_physics path="units/payday2/characters/hh_acc_spooc_armour/hh_acc_spooc_armour" force="true" relaod="true"/>
-		<material_config path="units/payday2/characters/hh_acc_spooc_armour/hh_acc_spooc_armour" force="true" relaod="true"/>
-		<model path="units/payday2/characters/hh_acc_spooc_armour/hh_acc_spooc_armour" force="true" relaod="true"/>
-		<object path="units/payday2/characters/hh_acc_spooc_armour/hh_acc_spooc_armour" force="true" relaod="true"/>
-		<unit path="units/payday2/characters/hh_acc_spooc_armour/hh_acc_spooc_armour" force="true" relaod="true"/>
-	
-		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_13" force="true" relaod="true"/>
-		<cooked_physics path="units/payday2/characters/hh_acc_zeal_taser_armour/hh_acc_zeal_taser_armour" force="true" relaod="true"/>
-		<material_config path="units/payday2/characters/hh_acc_zeal_taser_armour/hh_acc_zeal_taser_armour" force="true" relaod="true"/>
-		<model path="units/payday2/characters/hh_acc_zeal_taser_armour/hh_acc_zeal_taser_armour" force="true" relaod="true"/>
-		<object path="units/payday2/characters/hh_acc_zeal_taser_armour/hh_acc_zeal_taser_armour" force="true" relaod="true"/>
-		<unit path="units/payday2/characters/hh_acc_zeal_taser_armour/hh_acc_zeal_taser_armour" force="true" relaod="true"/>
-		<texture path="units/payday2/characters/hh_acc_zeal_taser_armour/shared_textures/heads_atlas_nm" force="true" relaod="true"/>
-		<texture path="units/payday2/characters/hh_acc_zeal_taser_armour/shared_textures/heads_atlas_df" force="true" relaod="true"/>
-		<texture path="units/payday2/characters/hh_acc_zeal_taser_armour/shared_textures/taser_body_df" force="true" relaod="true"/>
-		<texture path="units/payday2/characters/hh_acc_zeal_taser_armour/shared_textures/helmets_heavy_taser_atlas_df" force="true" relaod="true"/>
-
-		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_11" force="true" relaod="true"/>
-		<cooked_physics path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true" relaod="true"/>
-		<material_config path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true" relaod="true"/>
-		<model path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true" relaod="true"/>
-		<object path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true" relaod="true"/>
-		<unit path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true" relaod="true"/>
-
-		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_10" force="true" relaod="true"/>
-
-		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_12" force="true" relaod="true"/>
-		<cooked_physics path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true" relaod="true"/>
-		<material_config path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true" relaod="true"/>
-		<model path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true" relaod="true"/>
-		<object path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true" relaod="true"/>
-		<unit path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true" relaod="true"/>
-
-		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_9" force="true" relaod="true"/>
+		<!--spawn_prop_sneak_suit-->
+		<cooked_physics path="units/pd2_dlc_dah/characters/dah_acc_fps_stealth_suit/dah_acc_fps_stealth_suit" force="true"/>
+		<material_config path="units/pd2_dlc_dah/characters/dah_acc_fps_stealth_suit/dah_acc_fps_stealth_suit" force="true"/>
+		<model path="units/pd2_dlc_dah/characters/dah_acc_fps_stealth_suit/dah_acc_fps_stealth_suit" force="true"/>
+		<object path="units/pd2_dlc_dah/characters/dah_acc_fps_stealth_suit/dah_acc_fps_stealth_suit" force="true"/>
+		<unit path="units/pd2_dlc_dah/characters/dah_acc_fps_stealth_suit/dah_acc_fps_stealth_suit" force="true"/>
+		<texture path="units/pd2_dlc_dah/characters/dah_acc_fps_stealth_suit/player_tactical_outfit_fp_df" force="true"/>
+		<texture path="units/pd2_dlc_dah/characters/dah_acc_fps_stealth_suit/player_tactical_outfit_fp_gsma" force="true"/>
+		<texture path="units/pd2_dlc_dah/characters/dah_acc_fps_stealth_suit/player_tactical_outfit_fp_nm" force="true"/>
+		<cooked_physics path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit/dah_acc_stealth_suit" force="true"/>
+		<material_config path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit/dah_acc_stealth_suit" force="true"/>
+		<model path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit/dah_acc_stealth_suit" force="true"/>
+		<object path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit/dah_acc_stealth_suit" force="true"/>
+		<unit path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit/dah_acc_stealth_suit" force="true"/>
+		<material_config path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit/dah_acc_stealth_suit_contour" force="true"/>
+		<texture path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit/player_tactical_outfit_df" force="true"/>
+		<texture path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit/player_tactical_outfit_gsma" force="true"/>
+		<texture path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit/player_tactical_outfit_nm" force="true"/>
+		<cooked_physics path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_female_big/dah_acc_stealth_suit_female_big" force="true"/>
+		<material_config path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_female_big/dah_acc_stealth_suit_female_big" force="true"/>
+		<model path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_female_big/dah_acc_stealth_suit_female_big" force="true"/>
+		<object path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_female_big/dah_acc_stealth_suit_female_big" force="true"/>
+		<unit path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_female_big/dah_acc_stealth_suit_female_big" force="true"/>
+		<material_config path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_female_big/dah_acc_stealth_suit_female_big_contour" force="true"/>
+		<cooked_physics path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_female_thin/dah_acc_stealth_suit_female_thin" force="true"/>
+		<material_config path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_female_thin/dah_acc_stealth_suit_female_thin" force="true"/>
+		<model path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_female_thin/dah_acc_stealth_suit_female_thin" force="true"/>
+		<object path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_female_thin/dah_acc_stealth_suit_female_thin" force="true"/>
+		<unit path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_female_thin/dah_acc_stealth_suit_female_thin" force="true"/>
+		<material_config path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_female_thin/dah_acc_stealth_suit_female_thin_contour" force="true"/>
+		<cooked_physics path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_male_big/dah_acc_stealth_suit_male_big" force="true"/>
+		<material_config path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_male_big/dah_acc_stealth_suit_male_big" force="true"/>
+		<model path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_male_big/dah_acc_stealth_suit_male_big" force="true"/>
+		<object path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_male_big/dah_acc_stealth_suit_male_big" force="true"/>
+		<unit path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_male_big/dah_acc_stealth_suit_male_big" force="true"/>
+		<material_config path="units/pd2_dlc_dah/characters/dah_acc_stealth_suit_male_big/dah_acc_stealth_suit_male_big_contour" force="true"/>
+		<!--spawn_prop_winter_suit-->
+		<texture path="units/pd2_dlc_wwh/characters/wwh_acc_fps_stealth_suit/player_tactical_outfit_fp_df" force="true"/>
+		<texture path="units/pd2_dlc_wwh/characters/wwh_acc_fps_stealth_suit/player_tactical_outfit_fp_gsma" force="true"/>
+		<texture path="units/pd2_dlc_wwh/characters/wwh_acc_fps_stealth_suit/player_tactical_outfit_fp_nm" force="true"/>
+		<cooked_physics path="units/pd2_dlc_wwh/characters/wwh_acc_fps_stealth_suit/wwh_acc_fps_stealth_suit" force="true"/>
+		<material_config path="units/pd2_dlc_wwh/characters/wwh_acc_fps_stealth_suit/wwh_acc_fps_stealth_suit" force="true"/>
+		<model path="units/pd2_dlc_wwh/characters/wwh_acc_fps_stealth_suit/wwh_acc_fps_stealth_suit" force="true"/>
+		<object path="units/pd2_dlc_wwh/characters/wwh_acc_fps_stealth_suit/wwh_acc_fps_stealth_suit" force="true"/>
+		<unit path="units/pd2_dlc_wwh/characters/wwh_acc_fps_stealth_suit/wwh_acc_fps_stealth_suit" force="true"/>
+		<texture path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit/player_tactical_outfit_df" force="true"/>
+		<texture path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit/player_tactical_outfit_gsma" force="true"/>
+		<texture path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit/player_tactical_outfit_nm" force="true"/>
+		<cooked_physics path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit/wwh_acc_stealth_suit" force="true"/>
+		<material_config path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit/wwh_acc_stealth_suit" force="true"/>
+		<model path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit/wwh_acc_stealth_suit" force="true"/>
+		<object path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit/wwh_acc_stealth_suit" force="true"/>
+		<unit path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit/wwh_acc_stealth_suit" force="true"/>
+		<material_config path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit/wwh_acc_stealth_suit_contour" force="true"/>
+		<cooked_physics path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_female_big/wwh_acc_stealth_suit_female_big" force="true"/>
+		<material_config path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_female_big/wwh_acc_stealth_suit_female_big" force="true"/>
+		<model path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_female_big/wwh_acc_stealth_suit_female_big" force="true"/>
+		<object path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_female_big/wwh_acc_stealth_suit_female_big" force="true"/>
+		<unit path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_female_big/wwh_acc_stealth_suit_female_big" force="true"/>
+		<material_config path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_female_big/wwh_acc_stealth_suit_female_big_contour" force="true"/>
+		<cooked_physics path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_female_thin/wwh_acc_stealth_suit_female_thin" force="true"/>
+		<material_config path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_female_thin/wwh_acc_stealth_suit_female_thin" force="true"/>
+		<model path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_female_thin/wwh_acc_stealth_suit_female_thin" force="true"/>
+		<object path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_female_thin/wwh_acc_stealth_suit_female_thin" force="true"/>
+		<unit path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_female_thin/wwh_acc_stealth_suit_female_thin" force="true"/>
+		<material_config path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_female_thin/wwh_acc_stealth_suit_female_thin_contour" force="true"/>
+		<cooked_physics path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_male_big/wwh_acc_stealth_suit_male_big" force="true"/>
+		<material_config path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_male_big/wwh_acc_stealth_suit_male_big" force="true"/>
+		<model path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_male_big/wwh_acc_stealth_suit_male_big" force="true"/>
+		<object path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_male_big/wwh_acc_stealth_suit_male_big" force="true"/>
+		<unit path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_male_big/wwh_acc_stealth_suit_male_big" force="true"/>
+		<material_config path="units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit_male_big/wwh_acc_stealth_suit_male_big_contour" force="true"/>
+		<!--Level 14-->
+		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_14" force="true"/>
+		<cooked_physics path="units/payday2/characters/hh_acc_spooc_armour/hh_acc_spooc_armour" force="true"/>
+		<material_config path="units/payday2/characters/hh_acc_spooc_armour/hh_acc_spooc_armour" force="true"/>
+		<model path="units/payday2/characters/hh_acc_spooc_armour/hh_acc_spooc_armour" force="true"/>
+		<object path="units/payday2/characters/hh_acc_spooc_armour/hh_acc_spooc_armour" force="true"/>
+		<unit path="units/payday2/characters/hh_acc_spooc_armour/hh_acc_spooc_armour" force="true"/>
+		<!--Level 13-->
+		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_13" force="true"/>
+		<cooked_physics path="units/payday2/characters/hh_acc_zeal_taser_armour/hh_acc_zeal_taser_armour" force="true"/>
+		<material_config path="units/payday2/characters/hh_acc_zeal_taser_armour/hh_acc_zeal_taser_armour" force="true"/>
+		<model path="units/payday2/characters/hh_acc_zeal_taser_armour/hh_acc_zeal_taser_armour" force="true"/>
+		<object path="units/payday2/characters/hh_acc_zeal_taser_armour/hh_acc_zeal_taser_armour" force="true"/>
+		<unit path="units/payday2/characters/hh_acc_zeal_taser_armour/hh_acc_zeal_taser_armour" force="true"/>
+		<texture path="units/payday2/characters/hh_acc_zeal_taser_armour/shared_textures/heads_atlas_nm" force="true"/>
+		<texture path="units/payday2/characters/hh_acc_zeal_taser_armour/shared_textures/heads_atlas_df" force="true"/>
+		<texture path="units/payday2/characters/hh_acc_zeal_taser_armour/shared_textures/taser_body_df" force="true"/>
+		<texture path="units/payday2/characters/hh_acc_zeal_taser_armour/shared_textures/helmets_heavy_taser_atlas_df" force="true"/>
+		<!--Level 12-->
+		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_12" force="true"/>
+		<cooked_physics path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true"/>
+		<material_config path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true"/>
+		<model path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true"/>
+		<object path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true"/>
+		<unit path="units/payday2/characters/hh_acc_skulldozer_armour/hh_acc_skulldozer_armour" force="true"/>
+		<!--Level 11-->
+		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_11" force="true"/>
+		<cooked_physics path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true"/>
+		<material_config path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true"/>
+		<model path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true"/>
+		<object path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true"/>
+		<unit path="units/payday2/characters/hh_acc_zeal_heavy_armour/hh_acc_zeal_heavy_armour" force="true"/>
+		<!--Level 10-->
+		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_10" force="true"/>
+		<!--Level 9-->
+		<texture path="guis/textures/pd2/blackmarket/icons/armors/level_9" force="true"/>
 	</AddFiles>
 	<Hooks directory="Hooks">
-		<hook file="Core.lua" source_file="core/lib/managers/coresequencemanager"/>
+		<hook file="coresequencemanager.lua" source_file="core/lib/managers/coresequencemanager"/>
 		<hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/>
 		<hook file="criminalsmanager.lua" source_file="lib/managers/criminalsmanager"/>
 		<hook file="teamaimovement.lua" source_file="lib/units/player_team/teamaimovement"/>
