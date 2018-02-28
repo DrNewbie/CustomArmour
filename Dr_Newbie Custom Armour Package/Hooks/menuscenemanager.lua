@@ -1,21 +1,23 @@
 function MenuSceneManager:get_level_addon_armor(armor_id, unit)
 	armor_id = tostring(armor_id)
 	if managers.network and managers.network:session() then
-		local unit_damage = alive(unit) and unit:damage()
-		if unit_damage then
+		if alive(unit) then
 			DelayedCalls:Add("spawn_unit_AddOnArmourSyncFix_" .. tostring(unit:key()), 2, function ()
-				if armor_id == "level_9" then
-					unit_damage:run_sequence_simple("spawn_prop_winter_suit")
-				elseif armor_id == "level_10" then
-					unit_damage:run_sequence_simple("spawn_prop_sneak_suit")
-				elseif armor_id == "level_11" and unit_damage:has_sequence("spawn_zeal_heavy_armour") then
-					unit_damage:run_sequence_simple("spawn_zeal_heavy_armour")
-				elseif armor_id == "level_12" and unit_damage:has_sequence("spawn_skulldozer_armour") then
-					unit_damage:run_sequence_simple("spawn_skulldozer_armour")
-				elseif armor_id == "level_13" and unit_damage:has_sequence("spawn_zeal_taser_armour") then
-					unit_damage:run_sequence_simple("spawn_zeal_taser_armour")
-				elseif armor_id == "level_14" and unit_damage:has_sequence("spawn_spooc_armour") then
-					unit_damage:run_sequence_simple("spawn_spooc_armour")
+				local unit_damage = alive(unit) and unit:damage()
+				if type(armor_id) == "string" and unit_damage then
+					if armor_id == "level_9" then
+						unit_damage:run_sequence_simple("spawn_prop_winter_suit")
+					elseif armor_id == "level_10" then
+						unit_damage:run_sequence_simple("spawn_prop_sneak_suit")
+					elseif armor_id == "level_11" and unit_damage:has_sequence("spawn_zeal_heavy_armour") then
+						unit_damage:run_sequence_simple("spawn_zeal_heavy_armour")
+					elseif armor_id == "level_12" and unit_damage:has_sequence("spawn_skulldozer_armour") then
+						unit_damage:run_sequence_simple("spawn_skulldozer_armour")
+					elseif armor_id == "level_13" and unit_damage:has_sequence("spawn_zeal_taser_armour") then
+						unit_damage:run_sequence_simple("spawn_zeal_taser_armour")
+					elseif armor_id == "level_14" and unit_damage:has_sequence("spawn_spooc_armour") then
+						unit_damage:run_sequence_simple("spawn_spooc_armour")
+					end
 				end
 			end)
 		end

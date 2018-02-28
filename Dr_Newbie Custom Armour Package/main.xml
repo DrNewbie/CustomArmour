@@ -1,6 +1,6 @@
 <table name="Dr_Newbie Custom Armour Package">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="22013" name="asset_updates" folder_name="Dr_Newbie Custom Armour Package" version="12" provider="modworkshop"/>
+	<AssetUpdates id="22013" name="asset_updates" folder_name="Dr_Newbie Custom Armour Package" version="13" provider="modworkshop"/>
 	<AddFiles directory="Assets">
 		<!--spawn_prop_sneak_suit-->
 		<cooked_physics path="units/pd2_dlc_dah/characters/dah_acc_fps_stealth_suit/dah_acc_fps_stealth_suit" force="true"/>
