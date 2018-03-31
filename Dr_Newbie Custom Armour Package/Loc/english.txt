@@ -1,4 +1,8 @@
 {
+	"bm_armor_level_15":"Captain's Armour",
+	"bm_armor_level_15_desc":" ",
+	"bm_menu_skill_locked_level_15":"Requires the iron man skill",
+	
 	"bm_armor_level_14":"Cloaker's Suit",
 	"bm_armor_level_14_desc":" ",
 	

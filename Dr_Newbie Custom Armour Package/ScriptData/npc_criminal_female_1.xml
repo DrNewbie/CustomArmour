@@ -204,6 +204,17 @@
 			<object enabled="false" name="'g_vest_thies'"/>
 			<object enabled="false" name="'g_vest_leg_arm'"/>
 		</sequence>
+		<sequence editable="true" editable_state="false" name="'spawn_vip_1_armour'" triggable="true">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/payday2/characters/hh_acc_vip_1_armour/hh_acc_vip_1_armour'"/>
+			<object enabled="false" name="'g_body'"/>
+			<object enabled="false" name="'g_hands'"/>
+			<object enabled="false" name="'g_vest_small'"/>
+			<object enabled="false" name="'g_vest_body'"/>
+			<object enabled="false" name="'g_vest_shoulder'"/>
+			<object enabled="false" name="'g_vest_neck'"/>
+			<object enabled="false" name="'g_vest_thies'"/>
+			<object enabled="false" name="'g_vest_leg_arm'"/>
+		</sequence>
 		<sequence editable="true" editable_state="false" name="'spawn_spooc_armour'" triggable="true">
 			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/payday2/characters/hh_acc_spooc_armour/hh_acc_spooc_armour'"/>
 			<object enabled="false" name="'g_body'"/>

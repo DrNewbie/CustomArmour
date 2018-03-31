@@ -15,6 +15,8 @@ Hooks:PostHook(TeamAIMovement, "check_visual_equipment", "Dr_Newbie_CustomArmour
 			unit_damage:run_sequence_simple("spawn_zeal_taser_armour")
 		elseif armor == "level_14" and unit_damage:has_sequence("spawn_spooc_armour") then
 			unit_damage:run_sequence_simple("spawn_spooc_armour")
+		elseif armor == "level_15" and unit_damage:has_sequence("spawn_vip_1_armour") then
+			unit_damage:run_sequence_simple("spawn_vip_1_armour")
 		end
 	end
 end)

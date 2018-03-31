@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<dynamic_object>
+	<diesel materials="units/payday2/characters/hh_acc_vip_1_armour/hh_acc_vip_1_armour" orientation_object="root_point" />
+	<graphics>
+		<object name="g_body" enabled="true" />
+	</graphics>
+</dynamic_object>

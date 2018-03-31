@@ -1,4 +1,9 @@
 Hooks:PostHook(UpgradesTweakData, "_player_definitions", "Dr_Newbie_CustomArmourPackage_player_definitions", function(self)	
+	self.definitions.body_armor14 = {
+		name_id = "bm_armor_level_15",
+		armor_id = "level_15",
+		category = "armor"
+	}
 	self.definitions.body_armor13 = {
 		name_id = "bm_armor_level_14",
 		armor_id = "level_14",
@@ -103,4 +108,16 @@ Hooks:PostHook(UpgradesTweakData, "_init_pd2_values", "Dr_Newbie_CustomArmourPac
 	self.values.player.body_armor.skill_kill_change_regenerate_speed[14] = self.values.player.body_armor.skill_kill_change_regenerate_speed[3]
 	self.values.player.armor_grinding[1][14] = self.values.player.armor_grinding[1][3]
 	self.values.player.damage_to_armor[1][14] = self.values.player.damage_to_armor[1][3]
+	
+	self.values.player.body_armor.armor[15] = self.values.player.body_armor.armor[7]
+	self.values.player.body_armor.movement[15] = self.values.player.body_armor.movement[7]
+	self.values.player.body_armor.concealment[15] = self.values.player.body_armor.concealment[7]
+	self.values.player.body_armor.dodge[15] = self.values.player.body_armor.dodge[7]
+	self.values.player.body_armor.damage_shake[15] = self.values.player.body_armor.damage_shake[7]
+	self.values.player.body_armor.stamina[15] = self.values.player.body_armor.stamina[7]
+	self.values.player.body_armor.skill_ammo_mul[15] = self.values.player.body_armor.skill_ammo_mul[7]
+	self.values.player.body_armor.skill_max_health_store[15] = self.values.player.body_armor.skill_max_health_store[7]
+	self.values.player.body_armor.skill_kill_change_regenerate_speed[15] = self.values.player.body_armor.skill_kill_change_regenerate_speed[7]
+	self.values.player.armor_grinding[1][15] = self.values.player.armor_grinding[1][7]
+	self.values.player.damage_to_armor[1][15] = self.values.player.damage_to_armor[1][7]
 end)
