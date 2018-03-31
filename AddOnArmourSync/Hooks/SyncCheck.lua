@@ -42,19 +42,9 @@ function Sync2All_AddOnArmourSyncFix(peer_id, str)
 					armor_id = list.armor_current_state
 				end
 				if armor_id then
-					local armor_sequence
-					if armor_id == "level_9" then
-						armor_sequence = "spawn_prop_winter_suit"
-					elseif armor_id == "level_10" then
-						armor_sequence = "spawn_prop_sneak_suit"
-					elseif armor_id == "level_11" then
-						armor_sequence = "spawn_zeal_heavy_armour"
-					elseif armor_id == "level_12" then
-						armor_sequence = "spawn_skulldozer_armour"
-					elseif armor_id == "level_13" then
-						armor_sequence = "spawn_zeal_taser_armour"
-					elseif armor_id == "level_14" then
-						armor_sequence = "spawn_spooc_armour"
+					local armor_data = tweak_data.blackmarket.armors and tweak_data.blackmarket.armors[armor_id]
+					if armor_data and armor_data.custom and armor_data.custom_sequence then
+						armor_sequence = tostring(armor_data.custom_sequence)
 					end
 					if armor_sequence and unit:damage() and unit:damage():has_sequence(armor_sequence) then
 						unit:damage():run_sequence_simple(armor_sequence)

@@ -4,20 +4,11 @@ function MenuSceneManager:get_level_addon_armor(armor_id, unit)
 		if alive(unit) then
 			local unit_damage = alive(unit) and unit:damage()
 			if type(armor_id) == "string" and unit_damage then
-				if armor_id == "level_9" then
-					unit_damage:run_sequence_simple("spawn_prop_winter_suit")
-				elseif armor_id == "level_10" then
-					unit_damage:run_sequence_simple("spawn_prop_sneak_suit")
-				elseif armor_id == "level_11" and unit_damage:has_sequence("spawn_zeal_heavy_armour") then
-					unit_damage:run_sequence_simple("spawn_zeal_heavy_armour")
-				elseif armor_id == "level_12" and unit_damage:has_sequence("spawn_skulldozer_armour") then
-					unit_damage:run_sequence_simple("spawn_skulldozer_armour")
-				elseif armor_id == "level_13" and unit_damage:has_sequence("spawn_zeal_taser_armour") then
-					unit_damage:run_sequence_simple("spawn_zeal_taser_armour")
-				elseif armor_id == "level_14" and unit_damage:has_sequence("spawn_spooc_armour") then
-					unit_damage:run_sequence_simple("spawn_spooc_armour")
-				elseif armor_id == "level_15" and unit_damage:has_sequence("spawn_vip_1_armour") then
-					unit_damage:run_sequence_simple("spawn_vip_1_armour")
+				local armor_data = tweak_data.blackmarket.armors and tweak_data.blackmarket.armors[armor_id]
+				if armor_data and armor_data.custom and armor_data.custom_sequence then
+					if unit_damage:has_sequence(armor_data.custom_sequence) then
+						unit_damage:run_sequence_simple(armor_data.custom_sequence)
+					end
 				end
 			end
 		end

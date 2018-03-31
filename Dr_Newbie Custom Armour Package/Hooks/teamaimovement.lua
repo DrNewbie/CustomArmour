@@ -2,21 +2,12 @@ Hooks:PostHook(TeamAIMovement, "check_visual_equipment", "Dr_Newbie_CustomArmour
 	local loadout =  managers.criminals:get_loadout_for(self._ext_base._tweak_table)
 	local unit_damage = self._unit:damage()
 	if unit_damage then
-		local armor = tostring(loadout.armor)
-		if armor == "level_9" then
-			unit_damage:run_sequence_simple("spawn_prop_winter_suit")
-		elseif armor == "level_10" then
-			unit_damage:run_sequence_simple("spawn_prop_sneak_suit")
-		elseif armor == "level_11" and unit_damage:has_sequence("spawn_zeal_heavy_armour") then
-			unit_damage:run_sequence_simple("spawn_zeal_heavy_armour")
-		elseif armor == "level_12" and unit_damage:has_sequence("spawn_skulldozer_armour") then
-			unit_damage:run_sequence_simple("spawn_skulldozer_armour")
-		elseif armor == "level_13" and unit_damage:has_sequence("spawn_zeal_taser_armour") then
-			unit_damage:run_sequence_simple("spawn_zeal_taser_armour")
-		elseif armor == "level_14" and unit_damage:has_sequence("spawn_spooc_armour") then
-			unit_damage:run_sequence_simple("spawn_spooc_armour")
-		elseif armor == "level_15" and unit_damage:has_sequence("spawn_vip_1_armour") then
-			unit_damage:run_sequence_simple("spawn_vip_1_armour")
+		local armor_id = tostring(loadout.armor)
+		local armor_data = tweak_data.blackmarket.armors and tweak_data.blackmarket.armors[armor_id]
+		if armor_data and armor_data.custom and armor_data.custom_sequence then
+			if unit_damage:has_sequence(armor_data.custom_sequence) then
+				unit_damage:run_sequence_simple(armor_data.custom_sequence)
+			end
 		end
 	end
 end)
