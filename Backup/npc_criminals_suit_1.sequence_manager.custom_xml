@@ -1,0 +1,519 @@
+<table>
+	<unit>
+		<variables>
+			<var_armor_state value="1"/>
+			<var_shirt_taco value="0"/>
+			<var_shirt_snakeskin value="0"/>
+			<var_shirt_pink value="0"/>
+			<var_body_replace value="0"/>
+		</variables>
+		<filter name="'armor_state_1'">
+			<check value="vars.var_armor_state == 1"/>
+		</filter>
+		<filter name="'armor_state_2'">
+			<check value="vars.var_armor_state == 2"/>
+		</filter>
+		<filter name="'armor_state_3'">
+			<check value="vars.var_armor_state == 3"/>
+		</filter>
+		<filter name="'armor_state_4'">
+			<check value="vars.var_armor_state == 4"/>
+		</filter>
+		<filter name="'armor_state_5'">
+			<check value="vars.var_armor_state == 5"/>
+		</filter>
+		<filter name="'armor_state_6'">
+			<check value="vars.var_armor_state == 6"/>
+		</filter>
+		<filter name="'armor_state_7'">
+			<check value="vars.var_armor_state == 7"/>
+		</filter>
+		<filter name="'filter_body_replaced'">
+			<check value="vars.var_body_replace == 0"/>
+		</filter>
+		<filter name="'is_dallas'">
+			<check value="(dest_unit:parent() or dest_unit):base():character_name() == 'russian'"/>
+		</filter>
+		<filter name="'is_wolf'">
+			<check value="(dest_unit:parent() or dest_unit):base():character_name() == 'german'"/>
+		</filter>
+		<filter name="'is_chains'">
+			<check value="(dest_unit:parent() or dest_unit):base():character_name() == 'spanish'"/>
+		</filter>
+		<filter name="'is_hoxton'">
+			<check value="(dest_unit:parent() or dest_unit):base():character_name() == 'american'"/>
+		</filter>
+		<filter name="'is_jowi'">
+			<check value="(dest_unit:parent() or dest_unit):base():character_name() == 'jowi'"/>
+		</filter>
+		<filter name="'is_old_hoxton'">
+			<check value="(dest_unit:parent() or dest_unit):base():character_name() == 'old_hoxton'"/>
+		</filter>
+		<filter name="'is_dragan'">
+			<check value="(dest_unit:parent() or dest_unit):base():character_name() == 'dragan'"/>
+		</filter>
+		<filter name="'is_jacket'">
+			<check value="(dest_unit:parent() or dest_unit):base():character_name() == 'jacket'"/>
+		</filter>
+		<filter name="'is_sokol'">
+			<check value="(dest_unit:parent() or dest_unit):base():character_name() == 'sokol'"/>
+		</filter>
+		<filter name="'is_dragon'">
+			<check value="(dest_unit:parent() or dest_unit):base():character_name() == 'dragon'"/>
+		</filter>
+		<filter name="'is_bodhi'">
+			<check value="(dest_unit:parent() or dest_unit):base():character_name() == 'bodhi'"/>
+		</filter>
+		<filter name="'is_jimmy'">
+			<check value="(dest_unit:parent() or dest_unit):base():character_name() == 'jimmy'"/>
+		</filter>
+		<sequence editable_state="false" name="'int_seq_hide_all'" triggable="false">
+			<object enabled="false" name="'g_body'"/>
+			<object enabled="false" name="'g_hands'"/>
+			<object enabled="false" name="'g_head_chains'"/>
+			<object enabled="false" name="'g_head_dragan'"/>
+			<object enabled="false" name="'g_head_dallas'"/>
+			<object enabled="false" name="'g_head_hoxton'"/>
+			<object enabled="false" name="'g_head_old_hoxton'"/>
+			<object enabled="false" name="'g_head_john_wick'"/>
+			<object enabled="false" name="'g_head_wolf'"/>
+			<object enabled="false" name="'g_head_sokol'"/>
+			<object enabled="false" name="'g_sokol_mask_on'"/>
+			<object enabled="false" name="'g_sokol_mask_off'"/>
+			<object enabled="false" name="'g_sokol_hair'"/>
+			<object enabled="false" name="'g_head_jacket'"/>
+			<object enabled="false" name="'g_body_jacket'"/>
+			<object enabled="false" name="'g_head_jiro'"/>
+			<object enabled="false" name="'g_body_jiro'"/>
+			<object enabled="false" name="'g_body_bodhi'"/>
+			<object enabled="false" name="'g_head_bodhi'"/>
+			<object enabled="false" name="'g_head_jimmy'"/>
+			<object enabled="false" name="'g_body_jimmy'"/>
+			<object enabled="false" name="'g_jimmy_mask_on'"/>
+			<object enabled="false" name="'g_jimmy_mask_off'"/>
+			<object enabled="false" name="'g_head_terry'"/>
+			<object enabled="false" name="'g_body_terry'"/>
+			<object enabled="false" name="'g_head_max'"/>
+			<object enabled="false" name="'g_body_max'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_hide_body'" triggable="false">
+			<object enabled="false" name="'g_body'"/>
+			<object enabled="false" name="'g_body_jacket'"/>
+			<object enabled="false" name="'g_body_jiro'"/>
+			<object enabled="false" name="'g_body_bodhi'"/>
+			<object enabled="false" name="'g_body_jimmy'"/>
+			<object enabled="false" name="'g_body_terry'"/>
+			<object enabled="false" name="'g_body_max'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_chains'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_chains'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_chains'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_chains_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_chains_cc'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_chains'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_dallas'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_dallas'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_dallas'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_dallas_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_dallas_cc'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_dallas'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_hoxton'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_hoxton'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_hoxton'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_hoxton_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_hoxton_cc'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_hoxton'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_dragan'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_dragan'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_dragan'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_dragan_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_dragan_cc'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_dragan'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_jacket'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_jacket'"/>
+			<object enabled="true" name="'g_head_jacket'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body_jacket'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_jacket_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_jacket_cc'"/>
+			<object enabled="true" name="'g_head_jacket'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body_jacket'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_old_hoxton'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_old_hoxton'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_old_hoxton'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_old_hoxton_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_old_hoxton_cc'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_old_hoxton'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_wolf'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_wolf'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_wolf'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_wolf_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_wolf_cc'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_wolf'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_john_wick'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_john_wick'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_john_wick'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_john_wick_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_john_wick_cc'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_john_wick'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_sokol'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_sokol'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_sokol'"/>
+			<object enabled="true" name="'g_sokol_mask_off'"/>
+			<object enabled="true" name="'g_sokol_hair'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_sokol_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_sokol_cc'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_sokol'"/>
+			<object enabled="true" name="'g_sokol_mask_off'"/>
+			<object enabled="true" name="'g_sokol_hair'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_jiro'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_jiro'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_jiro'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body_jiro'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_jiro_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_jiro_cc'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_hands'"/>
+			<object enabled="true" name="'g_head_jiro'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body_jiro'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_bodhi'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_bodhi'"/>
+			<object enabled="true" name="'g_head_bodhi'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body_bodhi'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_bodhi_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_bodhi_cc'"/>
+			<object enabled="true" name="'g_head_bodhi'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body_bodhi'"/>
+		</sequence>
+		<sequence name="'mask_on_sokol'">
+			<object enabled="true" name="'g_sokol_mask_on'"/>
+			<object enabled="false" name="'g_sokol_mask_off'"/>
+			<object enabled="false" name="'g_sokol_hair'"/>
+		</sequence>
+		<sequence name="'mask_off_sokol'">
+			<object enabled="false" name="'g_sokol_mask_on'"/>
+			<object enabled="true" name="'g_sokol_mask_off'"/>
+			<object enabled="true" name="'g_sokol_hair'"/>
+		</sequence>
+		<sequence name="'mask_on_jimmy'">
+			<object enabled="true" name="'g_jimmy_mask_on'"/>
+			<object enabled="false" name="'g_jimmy_mask_off'"/>
+		</sequence>
+		<sequence name="'mask_off_jimmy'">
+			<object enabled="false" name="'g_jimmy_mask_on'"/>
+			<object enabled="true" name="'g_jimmy_mask_off'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_jimmy'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_jimmy'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body_jimmy'"/>
+			<object enabled="true" name="'g_head_jimmy'"/>
+			<object enabled="true" name="'g_jimmy_mask_off'"/>
+			<object enabled="true" name="'g_jimmy_mask_on'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_jimmy_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/payday2/characters/npc_criminals_suit_1/mtr_jimmy_cc'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body_jimmy'"/>
+			<object enabled="true" name="'g_head_jimmy'"/>
+			<object enabled="true" name="'g_jimmy_mask_off'"/>
+			<object enabled="true" name="'g_jimmy_mask_on'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_terry'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/pd2_dlc_chico/characters/npc_criminals_terry/mtr_criminal_terry'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body_terry'"/>
+			<object enabled="true" name="'g_head_terry'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_terry_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<material_config name="'units/pd2_dlc_chico/characters/npc_criminals_terry/mtr_criminal_terry_cc'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body_terry'"/>
+			<object enabled="true" name="'g_head_terry'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_max'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body_max'"/>
+			<object enabled="true" name="'g_head_max'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_mtr_max_cc'" triggable="true">
+			<run_sequence name="'int_seq_hide_all'"/>
+			<object enabled="true" filter="'filter_body_replaced'" name="'g_body_max'"/>
+			<object enabled="true" name="'g_head_max'"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_model_01'" triggable="true">
+			<object enabled="false" name="'g_vest_small'"/>
+			<object enabled="false" name="'g_vest_body'"/>
+			<object enabled="false" name="'g_vest_shoulder'"/>
+			<object enabled="false" name="'g_vest_neck'"/>
+			<object enabled="false" name="'g_vest_thies'"/>
+			<object enabled="false" name="'g_vest_leg_arm'"/>
+			<set_variables var_armor_state="1"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_model_02'" triggable="true">
+			<object enabled="true" name="'g_vest_small'"/>
+			<object enabled="false" name="'g_vest_body'"/>
+			<object enabled="false" name="'g_vest_shoulder'"/>
+			<object enabled="false" name="'g_vest_neck'"/>
+			<object enabled="false" name="'g_vest_thies'"/>
+			<object enabled="false" name="'g_vest_leg_arm'"/>
+			<set_variables var_armor_state="2"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_model_03'" triggable="true">
+			<object enabled="false" name="'g_vest_small'"/>
+			<object enabled="true" name="'g_vest_body'"/>
+			<object enabled="false" name="'g_vest_shoulder'"/>
+			<object enabled="false" name="'g_vest_neck'"/>
+			<object enabled="false" name="'g_vest_thies'"/>
+			<object enabled="false" name="'g_vest_leg_arm'"/>
+			<set_variables var_armor_state="3"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_model_04'" triggable="true">
+			<object enabled="false" name="'g_vest_small'"/>
+			<object enabled="true" name="'g_vest_body'"/>
+			<object enabled="false" name="'g_vest_shoulder'"/>
+			<object enabled="true" name="'g_vest_neck'"/>
+			<object enabled="false" name="'g_vest_thies'"/>
+			<object enabled="false" name="'g_vest_leg_arm'"/>
+			<set_variables var_armor_state="4"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_model_05'" triggable="true">
+			<object enabled="false" name="'g_vest_small'"/>
+			<object enabled="true" name="'g_vest_body'"/>
+			<object enabled="true" name="'g_vest_shoulder'"/>
+			<object enabled="true" name="'g_vest_neck'"/>
+			<object enabled="false" name="'g_vest_thies'"/>
+			<object enabled="false" name="'g_vest_leg_arm'"/>
+			<set_variables var_armor_state="5"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_model_06'" triggable="true">
+			<object enabled="false" name="'g_vest_small'"/>
+			<object enabled="true" name="'g_vest_body'"/>
+			<object enabled="true" name="'g_vest_shoulder'"/>
+			<object enabled="true" name="'g_vest_neck'"/>
+			<object enabled="true" name="'g_vest_thies'"/>
+			<object enabled="false" name="'g_vest_leg_arm'"/>
+			<set_variables var_armor_state="6"/>
+		</sequence>
+		<sequence editable_state="true" name="'var_model_07'" triggable="true">
+			<object enabled="false" name="'g_vest_small'"/>
+			<object enabled="true" name="'g_vest_body'"/>
+			<object enabled="true" name="'g_vest_shoulder'"/>
+			<object enabled="true" name="'g_vest_neck'"/>
+			<object enabled="true" name="'g_vest_thies'"/>
+			<object enabled="true" name="'g_vest_leg_arm'"/>
+			<set_variables var_armor_state="7"/>
+		</sequence>
+		<sequence editable_state="true" name="'minigame_win'" triggable="true">
+			<function extension="'interaction'" function="'play_minigame_vo'" param1="'win'"/>
+		</sequence>
+		<sequence editable_state="true" name="'minigame_lose'" triggable="true">
+			<function extension="'interaction'" function="'play_minigame_vo'" param1="'lose'"/>
+		</sequence>
+		<sequence editable="true" editable_state="false" name="'spawn_prop_raincoat'" triggable="true">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_glace/characters/glc_acc_raincoat/glc_acc_raincoat'"/>
+			<object enabled="false" name="'g_vest_small'"/>
+			<object enabled="false" name="'g_vest_body'"/>
+			<object enabled="false" name="'g_vest_shoulder'"/>
+			<object enabled="false" name="'g_vest_neck'"/>
+			<object enabled="false" name="'g_vest_thies'"/>
+			<object enabled="false" name="'g_vest_leg_arm'"/>
+		</sequence>
+		<sequence editable="true" editable_state="false" name="'despawn_prop_raincoat'" triggable="true">
+			<function extension="'spawn_manager'" function="'remove_unit'" param1="'char_mesh'"/>
+			<run_sequence filter="'armor_state_1'" name="'var_model_01'"/>
+			<run_sequence filter="'armor_state_2'" name="'var_model_02'"/>
+			<run_sequence filter="'armor_state_3'" name="'var_model_03'"/>
+			<run_sequence filter="'armor_state_4'" name="'var_model_04'"/>
+			<run_sequence filter="'armor_state_5'" name="'var_model_05'"/>
+			<run_sequence filter="'armor_state_6'" name="'var_model_06'"/>
+			<run_sequence filter="'armor_state_7'" name="'var_model_07'"/>
+		</sequence>
+		<sequence editable="true" editable_state="false" name="'spawn_prop_sneak_suit'" triggable="true">
+			<set_variables var_body_replace="1"/>
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_dah/characters/dah_acc_stealth_suit/dah_acc_stealth_suit'"/>
+			<object enabled="false" name="'g_body'"/>
+			<object enabled="false" name="'g_body_jacket'"/>
+			<object enabled="false" name="'g_hands'"/>
+			<object enabled="false" name="'g_body_jiro'"/>
+			<object enabled="false" name="'g_body_bodhi'"/>
+			<object enabled="false" name="'g_body_jimmy'"/>
+			<object enabled="false" name="'g_vest_small'"/>
+			<object enabled="false" name="'g_vest_body'"/>
+			<object enabled="false" name="'g_vest_shoulder'"/>
+			<object enabled="false" name="'g_vest_neck'"/>
+			<object enabled="false" name="'g_vest_thies'"/>
+			<object enabled="false" name="'g_vest_leg_arm'"/>
+		</sequence>
+		<sequence editable="true" editable_state="false" name="'despawn_prop_sneak_suit'" triggable="true">
+			<function extension="'spawn_manager'" function="'remove_unit'" param1="'char_mesh'"/>
+			<run_sequence filter="'armor_state_1'" name="'var_model_01'"/>
+			<run_sequence filter="'armor_state_2'" name="'var_model_02'"/>
+			<run_sequence filter="'armor_state_3'" name="'var_model_03'"/>
+			<run_sequence filter="'armor_state_4'" name="'var_model_04'"/>
+			<run_sequence filter="'armor_state_5'" name="'var_model_05'"/>
+			<run_sequence filter="'armor_state_6'" name="'var_model_06'"/>
+			<run_sequence filter="'armor_state_7'" name="'var_model_07'"/>
+		</sequence>
+		<sequence editable="true" editable_state="false" name="'spawn_prop_tux'" triggable="true">
+			<set_variables var_body_replace="1"/>
+			<run_sequence filter="'is_dallas'" name="'int_seq_dallas'"/>
+			<run_sequence filter="'is_wolf'" name="'int_seq_wolf'"/>
+			<run_sequence filter="'is_chains'" name="'int_seq_chains'"/>
+			<run_sequence filter="'is_hoxton'" name="'int_seq_houston'"/>
+			<run_sequence filter="'is_old_hoxton'" name="'int_seq_hoxton'"/>
+			<run_sequence filter="'is_jowi'" name="'int_seq_john_wick'"/>
+			<run_sequence filter="'is_dragan'" name="'int_seq_dragan'"/>
+			<run_sequence filter="'is_dragon'" name="'int_seq_jiro'"/>
+			<run_sequence filter="'is_sokol'" name="'int_seq_sokol'"/>
+			<run_sequence filter="'is_bodhi'" name="'int_seq_bodhi'"/>
+			<run_sequence filter="'is_jacket'" name="'int_seq_jacket'"/>
+			<run_sequence filter="'is_jimmy'" name="'int_seq_jimmy'"/>
+			<object enabled="false" name="'g_body'"/>
+			<object enabled="false" name="'g_body_vest'"/>
+			<object enabled="false" name="'g_body_armor'"/>
+			<object enabled="false" name="'g_vest_small'"/>
+			<object enabled="false" name="'g_vest_body'"/>
+			<object enabled="false" name="'g_vest_shoulder'"/>
+			<object enabled="false" name="'g_vest_neck'"/>
+			<object enabled="false" name="'g_vest_thies'"/>
+			<object enabled="false" name="'g_vest_leg_arm'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_dallas'" triggable="false">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_sah/characters/npc_acc_criminal_suit_white_1/npc_acc_criminals_white_tux'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_wolf'" triggable="false">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_sah/characters/npc_acc_criminal_suit_1/npc_acc_criminals_tux'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_chains'" triggable="false">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_sah/characters/npc_acc_criminal_chains_tux/npc_acc_criminal_chains_tux'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_houston'" triggable="false">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_sah/characters/npc_acc_criminal_suit_1/npc_acc_criminals_tux'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_hoxton'" triggable="false">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_sah/characters/npc_acc_criminal_suit_1/npc_acc_criminals_tux'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_john_wick'" triggable="false">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_sah/characters/npc_acc_criminal_john_wick_tux/npc_acc_criminal_john_wick_tux'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_dragan'" triggable="false">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_sah/characters/npc_acc_criminal_suit_1/npc_acc_criminals_tux'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_jiro'" triggable="false">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_sah/characters/npc_acc_criminal_suit_white_1/npc_acc_criminals_white_tux'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_sokol'" triggable="false">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_sah/characters/npc_acc_criminal_suit_1/npc_acc_criminals_tux'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_bodhi'" triggable="false">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_sah/characters/npc_acc_criminal_bodhi_tux/npc_acc_criminal_bodhi_tux'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_jacket'" triggable="false">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_sah/characters/npc_acc_criminal_jacket_tux/npc_acc_criminal_jacket_tux'"/>
+		</sequence>
+		<sequence editable_state="false" name="'int_seq_jimmy'" triggable="false">
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_sah/characters/npc_acc_criminal_suit_1/npc_acc_criminals_tux'"/>
+		</sequence>
+		<sequence editable="true" editable_state="false" name="'spawn_prop_winter_suit'" triggable="true">
+			<set_variables var_body_replace="1"/>
+			<function extension="'spawn_manager'" function="'spawn_and_link_unit'" param1="'_char_joint_names'" param2="'char_mesh'" param3="'units/pd2_dlc_wwh/characters/wwh_acc_stealth_suit/wwh_acc_stealth_suit'"/>
+			<object enabled="false" name="'g_body'"/>
+			<object enabled="false" name="'g_body_jacket'"/>
+			<object enabled="false" name="'g_hands'"/>
+			<object enabled="false" name="'g_body_jiro'"/>
+			<object enabled="false" name="'g_body_bodhi'"/>
+			<object enabled="false" name="'g_body_jimmy'"/>
+			<object enabled="false" name="'g_vest_small'"/>
+			<object enabled="false" name="'g_vest_body'"/>
+			<object enabled="false" name="'g_vest_shoulder'"/>
+			<object enabled="false" name="'g_vest_neck'"/>
+			<object enabled="false" name="'g_vest_thies'"/>
+			<object enabled="false" name="'g_vest_leg_arm'"/>
+		</sequence>
+		<sequence editable="true" editable_state="false" name="'despawn_prop_winter_suit'" triggable="true">
+			<function extension="'spawn_manager'" function="'remove_unit'" param1="'char_mesh'"/>
+			<run_sequence filter="'armor_state_1'" name="'var_model_01'"/>
+			<run_sequence filter="'armor_state_2'" name="'var_model_02'"/>
+			<run_sequence filter="'armor_state_3'" name="'var_model_03'"/>
+			<run_sequence filter="'armor_state_4'" name="'var_model_04'"/>
+			<run_sequence filter="'armor_state_5'" name="'var_model_05'"/>
+			<run_sequence filter="'armor_state_6'" name="'var_model_06'"/>
+			<run_sequence filter="'armor_state_7'" name="'var_model_07'"/>
+		</sequence>
+	</unit>
+</table>
