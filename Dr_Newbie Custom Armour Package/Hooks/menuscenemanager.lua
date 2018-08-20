@@ -9,6 +9,10 @@ function MenuSceneManager:get_level_addon_armor(armor_id, unit)
 					if unit_damage:has_sequence(armor_data.custom_sequence) then
 						unit_damage:run_sequence_simple(armor_data.custom_sequence)
 					end
+				else
+					if unit_damage:has_sequence(armor_data.sequence) then
+						unit_damage:run_sequence_simple(armor_data.sequence)
+					end
 				end
 			end
 		end
