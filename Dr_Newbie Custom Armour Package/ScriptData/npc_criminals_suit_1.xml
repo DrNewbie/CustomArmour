@@ -505,5 +505,29 @@
 			<spawn_unit name="'units/payday2/characters/ene_acc_bulldozer_throat_3/ene_acc_bulldozer_throat_3'" position="object_pos('Spine2')" rotation="object_rot('Spine2')"/>
 			<spawn_unit name="'units/payday2/characters/ene_acc_bulldozer_neck_3/ene_acc_bulldozer_neck_3'" position="object_pos('Spine2')" rotation="object_rot('Spine2')"/>
 		</sequence>
+		<sequence editable="true" editable_state="false" name="'spawn_prop_tux'" triggable="true">
+			<set_variables var_body_replace="1"/>
+			<run_sequence filter="'is_dallas'" name="'int_seq_dallas'"/>
+			<run_sequence filter="'is_wolf'" name="'int_seq_wolf'"/>
+			<run_sequence filter="'is_chains'" name="'int_seq_chains'"/>
+			<run_sequence filter="'is_hoxton'" name="'int_seq_houston'"/>
+			<run_sequence filter="'is_old_hoxton'" name="'int_seq_hoxton'"/>
+			<run_sequence filter="'is_jowi'" name="'int_seq_john_wick'"/>
+			<run_sequence filter="'is_dragan'" name="'int_seq_dragan'"/>
+			<run_sequence filter="'is_dragon'" name="'int_seq_jiro'"/>
+			<run_sequence filter="'is_sokol'" name="'int_seq_sokol'"/>
+			<run_sequence filter="'is_bodhi'" name="'int_seq_bodhi'"/>
+			<run_sequence filter="'is_jacket'" name="'int_seq_jacket'"/>
+			<run_sequence filter="'is_jimmy'" name="'int_seq_jimmy'"/>
+			<object enabled="false" name="'g_body'"/>
+			<object enabled="false" name="'g_body_vest'"/>
+			<object enabled="false" name="'g_body_armor'"/>
+			<object enabled="false" name="'g_vest_small'"/>
+			<object enabled="false" name="'g_vest_body'"/>
+			<object enabled="false" name="'g_vest_shoulder'"/>
+			<object enabled="false" name="'g_vest_neck'"/>
+			<object enabled="false" name="'g_vest_thies'"/>
+			<object enabled="false" name="'g_vest_leg_arm'"/>
+		</sequence>
 	</unit>
 </table>
