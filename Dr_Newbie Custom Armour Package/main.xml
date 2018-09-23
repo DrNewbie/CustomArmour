@@ -1,6 +1,18 @@
 <table name="Dr_Newbie Custom Armour Package">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="22013" version="18" name="asset_updates" folder_name="Dr_Newbie Custom Armour Package" provider="modworkshop"/>
+	<AssetUpdates id="22013" version="19" name="asset_updates" folder_name="Dr_Newbie Custom Armour Package" provider="modworkshop"/>
+	<ScriptMods directory="ScriptData">
+		<mod file="npc_criminals_suit_1.xml" type="custom_xml" target_file="units/payday2/characters/npc_criminals_suit_1/npc_criminals_suit_1" target_type="sequence_manager" merge_mode="script_merge"/>
+		<mod file="npc_criminal_female_1.xml" type="custom_xml" target_file="units/payday2/characters/npc_criminal_female_1/npc_criminal_female_1" target_type="sequence_manager" merge_mode="script_merge"/>
+		<mod file="npc_criminal_bonnie.xml" type="custom_xml" target_file="units/pd2_dlc_bonnie/characters/npc_criminal_bonnie/npc_criminal_bonnie" target_type="sequence_manager" merge_mode="script_merge"/>
+		<mod file="npc_criminal_sydney.xml" type="custom_xml" target_file="units/pd2_dlc_opera/characters/npc_criminals_fem_3/npc_criminal_sydney" target_type="sequence_manager" merge_mode="script_merge"/>
+		<mod file="npc_criminal_wild_1.xml" type="custom_xml" target_file="units/pd2_dlc_wild/characters/npc_criminals_wild_1/npc_criminal_wild_1" target_type="sequence_manager" merge_mode="script_merge"/>
+		<mod file="npc_criminal_ecp_male.xml" type="custom_xml" target_file="units/pd2_dlc_ecp/characters/npc_criminals_ecp_male/npc_criminal_ecp_male" target_type="sequence_manager" merge_mode="script_merge"/>
+		<mod file="npc_criminal_ecp_female.xml" type="custom_xml" target_file="units/pd2_dlc_ecp/characters/npc_criminals_ecp_female/npc_criminal_ecp_female" target_type="sequence_manager" merge_mode="script_merge"/>
+		<mod file="npc_criminal_myh.xml" type="custom_xml" target_file="units/pd2_dlc_myh/characters/npc_criminals_myh/npc_criminal_myh" target_type="sequence_manager" merge_mode="script_merge"/>
+		<mod file="npc_criminal_max.xml" type="custom_xml" target_file="units/pd2_dlc_max/characters/npc_criminals_max/npc_criminal_max" target_type="sequence_manager" merge_mode="script_merge"/>
+		<mod file="npc_criminal_terry.xml" type="custom_xml" target_file="units/pd2_dlc_chico/characters/npc_criminals_terry/npc_criminal_terry" target_type="sequence_manager" merge_mode="script_merge"/>
+	</ScriptMods>
 	<AddFiles directory="Assets">
 		<!--spawn_prop_sneak_suit-->
 		<cooked_physics path="units/pd2_dlc_dah/characters/dah_acc_fps_stealth_suit/dah_acc_fps_stealth_suit" force="true"/>
@@ -122,7 +134,7 @@
 		<hook file="coresequencemanager.lua" source_file="core/lib/managers/coresequencemanager"/>
 		<hook file="networkpeer.lua" source_file="lib/network/base/networkpeer"/>
 		<hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/>
-		<hook file="criminalsmanager.lua" source_file="lib/managers/criminalsmanager"/>
+		<hook file="managespawnedunits.lua" source_file="lib/units/props/managespawnedunits"/>
 		<hook file="teamaimovement.lua" source_file="lib/units/player_team/teamaimovement"/>
 		<hook file="menuscenemanager.lua" source_file="lib/managers/menu/menuscenemanager"/>
 		<hook file="blackmarkettweakdata.lua" source_file="lib/tweak_data/blackmarkettweakdata"/>

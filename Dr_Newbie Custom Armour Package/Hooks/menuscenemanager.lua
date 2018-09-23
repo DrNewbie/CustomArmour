@@ -1,6 +1,6 @@
 function MenuSceneManager:get_level_addon_armor(armor_id, unit)
 	armor_id = tostring(armor_id)
-	if managers.network and managers.network:session() then
+	if true then
 		if alive(unit) then
 			local unit_damage = alive(unit) and unit:damage()
 			if type(armor_id) == "string" and unit_damage then
